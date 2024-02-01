@@ -1,0 +1,42 @@
+.hamburger {
+  cursor: pointer;
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+    gap: 0.6rem;
+  }
+
+  &__label::before,
+  &__label::after,
+  &__input-checkbox {
+    content: '';
+    background-color: var(--color-white);
+    border-radius: 100rem;
+    display: inline-block;
+    width: 2.5rem;
+    height: 0.2rem;
+    transform-origin: center;
+  }
+
+  &__input-checkbox {
+    appearance: none;
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease;
+  }
+
+  &:has(&__input-checkbox:checked) &__input-checkbox {
+    opacity: 0;
+  }
+
+  &:has(&__input-checkbox:checked) &__label::before {
+    transform: rotate(45deg) translate(0.2rem, 1.1rem);
+  }
+
+  &:has(&__input-checkbox:checked) &__label::after {
+    transform: rotate(-45deg) translate(0, -1rem);
+  }
+}

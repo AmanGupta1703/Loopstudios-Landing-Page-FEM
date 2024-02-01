@@ -1,2 +1,11 @@
-@import "./partials/reset";
-@import "./partials/base";
+@import './partials/reset';
+@import './partials/utils';
+@import './partials/base';
+
+// CONTAINER
+@import './partials/container';
+
+// HEADER
+@import './partials/header';
+// HEADER  - HAMBURGER
+@import './partials/hamburger';
