@@ -40,6 +40,16 @@
     text-transform: uppercase;
   }
 
+  @media (min-width: 548px) and (max-width: 920px) {
+    &__text-container {
+      border-radius: 0.4rem;
+      width: 38rem;
+      padding: 2.5rem;
+      padding-right: 5.2rem;
+      margin-top: 8.5rem;
+    }
+  }
+
   @media (min-width: 920px) {
     &__wrapper {
       padding-top: 5.5rem;

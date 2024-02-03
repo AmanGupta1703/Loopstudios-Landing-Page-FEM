@@ -108,6 +108,15 @@ body {
   font-size: 3.2rem;
   text-transform: uppercase;
 }
+@media (min-width: 548px) and (max-width: 920px) {
+  .header__text-container {
+    border-radius: 0.4rem;
+    width: 38rem;
+    padding: 2.5rem;
+    padding-right: 5.2rem;
+    margin-top: 8.5rem;
+  }
+}
 @media (min-width: 920px) {
   .header__wrapper {
     padding-top: 5.5rem;
