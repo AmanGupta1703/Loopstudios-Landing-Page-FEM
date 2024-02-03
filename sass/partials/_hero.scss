@@ -1,0 +1,26 @@
+.hero {
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-family: var(--ff-josefin);
+    font-size: 2.4rem;
+    text-transform: uppercase;
+  }
+
+  &__text-container {
+    text-align: center;
+    max-width: 90%;
+    margin: 3.5rem auto 0;
+  }
+
+  &__text {
+    color: var(--color-dark-grey-01);
+    font-size: 1.2rem;
+    font-weight: var(--fw-light);
+    line-height: 1.7;
+    margin-top: 1.2rem;
+  }
+}

@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  height: 65vh;
 
   &__wrapper {
     padding: 2.5rem 0;
@@ -51,6 +52,8 @@
   }
 
   @media (min-width: 920px) {
+    height: 78vh;
+
     &__wrapper {
       padding-top: 5.5rem;
     }
