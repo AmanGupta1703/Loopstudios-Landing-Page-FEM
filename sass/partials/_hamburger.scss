@@ -52,6 +52,10 @@
     width: 100vw;
   }
 
+  &:has(&__input-checkbox:checked) + .nav.show .nav__nav {
+    display: block;
+  }
+
   @media (min-width: 920px) {
     display: none;
   }
