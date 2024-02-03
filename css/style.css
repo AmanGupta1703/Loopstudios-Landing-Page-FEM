@@ -295,7 +295,15 @@ body {
 .section--hero {
   padding-top: 8rem;
 }
+@media (min-width: 920px) {
+  .section--hero {
+    padding-top: 14rem;
+  }
+}
 
+.hero {
+  position: relative;
+}
 .hero__img {
   width: 100%;
   -o-object-fit: cover;
@@ -317,4 +325,29 @@ body {
   font-weight: var(--fw-light);
   line-height: 1.7;
   margin-top: 1.2rem;
+}
+@media (min-width: 920px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero__img {
+    width: 95%;
+  }
+  .hero__text-container {
+    background-color: var(--color-white);
+    text-align: left;
+    position: absolute;
+    padding: 7.5rem;
+    bottom: -2.5rem;
+    right: 12rem;
+    width: 50rem;
+  }
+  .hero__title {
+    font-size: 3.5rem;
+  }
+  .hero__text {
+    margin-top: 2rem;
+  }
 }

@@ -2,4 +2,10 @@
   &--hero {
     padding-top: 8rem;
   }
+
+  @media (min-width: 920px) {
+    &--hero {
+      padding-top: 14rem;
+    }
+  }
 }
