@@ -81,7 +81,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  height: 60vh;
+  height: 65vh;
   width: 100%;
 }
 .header__bg-image {
@@ -97,12 +97,34 @@ body {
   position: relative;
   z-index: 2;
 }
+.header__text-container {
+  border: 0.3rem solid var(--color-white);
+  padding: 2rem;
+  margin-top: 7rem;
+}
+.header__text {
+  color: var(--color-white);
+  font-family: var(--ff-josefin);
+  font-size: 3.2rem;
+  text-transform: uppercase;
+}
 @media (min-width: 920px) {
   .header__wrapper {
     padding-top: 5.5rem;
   }
   .header__bg-img-container {
     height: 78vh;
+  }
+  .header__text-container {
+    border-radius: 0.4rem;
+    width: 70rem;
+    padding: 2.5rem;
+    padding-right: 3rem;
+    margin-top: 8.5rem;
+  }
+  .header__text {
+    font-size: 6rem;
+    letter-spacing: 0.3rem;
   }
 }
 
