@@ -8,4 +8,10 @@
       padding-top: 14rem;
     }
   }
+
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    &--hero {
+      padding-top: 10rem;
+    }
+  }
 }

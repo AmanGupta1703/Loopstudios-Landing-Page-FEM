@@ -76,3 +76,8 @@
     }
   }
 }
+
+.header:has(.hamburger__input-checkbox:checked) + .main {
+  position: relative;
+  z-index: -1;
+}
